@@ -14,14 +14,22 @@ public class HomePage extends BasePage {
     }
  
     //*********Page Variables*********
-    String baseURL = "http://www.n11.com/";
- 
+    String baseURL = "https://www.dnvgl.com/";
+
+    String directLoginURL = "https://www.veracity.com/auth/login";
+
+    
     //*********Web Elements By Using Page Factory*********
-    @FindBy(how = How.CLASS_NAME, using = "btnSignIn")
+    @FindBy(how = How.CSS, using = "section.dnvgl-header-login-button>a")
     public WebElement signInButton;
  
     //*********Page Methods*********
     //Go to Homepage
+    public void goDirectToLoginPage(){
+        driver.get(directLoginURL);
+    }
+    
+  //Go to Homepage
     public void goToN11 (){
         driver.get(baseURL);
     }

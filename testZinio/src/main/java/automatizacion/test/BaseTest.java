@@ -2,6 +2,7 @@ package automatizacion.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,8 +19,17 @@ public class BaseTest {
  
     @BeforeClass
     public void classLevelSetup() {
+    	
+    	
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\mirian\\Downloads\\drivers\\chromedriver.exe");
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-infobars");
+		
+		WebDriver driver = new ChromeDriver(options);
+
         //Create a Chrome driver. All test classes use this.
-        driver = new ChromeDriver();
+//        driver = new ChromeDriver();
  
         //Create a wait. All test classes use this.
         wait = new WebDriverWait(driver,15);
