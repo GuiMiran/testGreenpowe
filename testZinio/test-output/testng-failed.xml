@@ -5,11 +5,10 @@
     <classes>
       <class name="automatizacion.greenpower.test.LoginTests">
         <methods>
-          <include name="invalidLoginTest_InvalidUserNameInvalidPassword"/>
-          <include name="methodLevelSetup"/>
           <include name="teardown"/>
+          <include name="invalidLoginTest_InvalidUserNameInvalidPassword"/>
           <include name="invalidLoginTest_EmptyUserEmptyPassword"/>
-          <include name="classLevelSetup"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- automatizacion.greenpower.test.LoginTests -->
     </classes>
