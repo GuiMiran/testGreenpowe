@@ -6,6 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import automatizacion.reports.ExtentReport;
+import automatizacion.reports.ExtentReport.*;
+
 
 public class HomePage extends BasePage {
 
@@ -26,6 +29,8 @@ public class HomePage extends BasePage {
     //*********Page Methods*********
     //Go to Homepage
     public void goToN11 (){
+		ExtentReport.logger = ExtentReport.extent.createTest("Inicializando la pagina: "+baseURL);
+
         driver.get(baseURL);
     }
 
