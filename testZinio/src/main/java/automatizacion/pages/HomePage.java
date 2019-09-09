@@ -29,7 +29,7 @@ public class HomePage extends BasePage {
     //*********Page Methods*********
     //Go to Homepage
     public void goToN11 (){
-		ExtentReport.logger = ExtentReport.extent.createTest("Inicializando la pagina: "+baseURL);
+//		ExtentReport.logger = ExtentReport.extent.createTest("Inicializando la pagina: "+baseURL);
 
         driver.get(baseURL);
     }

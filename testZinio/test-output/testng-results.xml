@@ -1,103 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17464" started-at="2019-09-08T22:35:38Z" finished-at="2019-09-08T22:35:55Z">
+  <suite name="Default suite" duration-ms="56712" started-at="2019-09-09T07:55:27Z" finished-at="2019-09-09T07:56:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17464" started-at="2019-09-08T22:35:38Z" finished-at="2019-09-08T22:35:55Z">
-      <class name="automatizacion.greenpower.test.LoginTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:automatizacion.greenpower.test.LoginTests@3bfdc050]" name="setup" is-config="true" duration-ms="10907" started-at="2019-09-08T22:35:38Z" finished-at="2019-09-08T22:35:49Z">
+    <test name="Default test" duration-ms="56712" started-at="2019-09-09T07:55:27Z" finished-at="2019-09-09T07:56:23Z">
+      <class name="tests.LoginTests">
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:tests.LoginTests@5f341870]" name="setupClass" is-config="true" duration-ms="802" started-at="2019-09-09T09:55:27Z" finished-at="2019-09-09T09:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@5f341870]" name="setup" is-config="true" duration-ms="5676" started-at="2019-09-09T09:55:28Z" finished-at="2019-09-09T09:55:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:automatizacion.greenpower.test.LoginTests@3bfdc050]" name="invalidLoginTest_InvalidUserNameInvalidPassword" duration-ms="140" started-at="2019-09-08T22:35:49Z" finished-at="2019-09-08T22:35:49Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at automatizacion.pages.HomePage.goToN11(HomePage.java:32)
-at automatizacion.greenpower.test.LoginTests.invalidLoginTest_InvalidUserNameInvalidPassword(LoginTests.java:14)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:tests.LoginTests@5f341870]" name="invalidLoginTest_InvalidUserNameInvalidPassword" duration-ms="12018" started-at="2019-09-09T09:55:33Z" finished-at="2019-09-09T09:55:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest_InvalidUserNameInvalidPassword -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:automatizacion.greenpower.test.LoginTests@3bfdc050]" name="teardown" is-config="true" duration-ms="910" started-at="2019-09-08T22:35:49Z" finished-at="2019-09-08T22:35:50Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@5f341870]" name="teardown" is-config="true" duration-ms="687" started-at="2019-09-09T09:55:45Z" finished-at="2019-09-09T09:55:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:automatizacion.greenpower.test.LoginTests@3bfdc050]" name="setup" is-config="true" duration-ms="4433" started-at="2019-09-08T22:35:50Z" finished-at="2019-09-08T22:35:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@5f341870]" name="setup" is-config="true" duration-ms="6159" started-at="2019-09-09T09:55:46Z" finished-at="2019-09-09T09:55:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:automatizacion.greenpower.test.LoginTests@3bfdc050]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="2" started-at="2019-09-08T22:35:54Z" finished-at="2019-09-08T22:35:54Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at automatizacion.pages.HomePage.goToN11(HomePage.java:32)
-at automatizacion.greenpower.test.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:32)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="validLoginTest_validUserNameAndValidPassword()[pri:0, instance:tests.LoginTests@5f341870]" name="validLoginTest_validUserNameAndValidPassword" duration-ms="13456" started-at="2019-09-09T09:55:52Z" finished-at="2019-09-09T09:56:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLoginTest_EmptyUserEmptyPassword -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:automatizacion.greenpower.test.LoginTests@3bfdc050]" name="teardown" is-config="true" duration-ms="914" started-at="2019-09-08T22:35:54Z" finished-at="2019-09-08T22:35:55Z">
+        </test-method> <!-- validLoginTest_validUserNameAndValidPassword -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@5f341870]" name="teardown" is-config="true" duration-ms="688" started-at="2019-09-09T09:56:06Z" finished-at="2019-09-09T09:56:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- automatizacion.greenpower.test.LoginTests -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@5f341870]" name="setup" is-config="true" duration-ms="4489" started-at="2019-09-09T09:56:06Z" finished-at="2019-09-09T09:56:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.LoginTests@5f341870]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="11604" started-at="2019-09-09T09:56:11Z" finished-at="2019-09-09T09:56:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest_EmptyUserEmptyPassword -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@5f341870]" name="teardown" is-config="true" duration-ms="1101" started-at="2019-09-09T09:56:22Z" finished-at="2019-09-09T09:56:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

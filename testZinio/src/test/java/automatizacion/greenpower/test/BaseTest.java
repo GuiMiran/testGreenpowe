@@ -2,27 +2,32 @@ package automatizacion.greenpower.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import automatizacion.pages.PageGenerator;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
     public WebDriver driver;
     public WebDriverWait wait;
     public PageGenerator page;
 
+    @BeforeClass
+	public static void setupClass() {
+		WebDriverManager.chromedriver().setup();
+	}
     @BeforeMethod
     public void setup () {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\mirian\\Downloads\\drivers\\vers76\\chromedriver.exe");
+//    	WebDriverManager.chromedriver().setup();
 		
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("disable-infobars");
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("disable-infobars");
 		
-		 
-		driver = new ChromeDriver(options);
+//    	WebDriverManager.getInstance(CHROME).setup();
+		driver = new ChromeDriver();
 
     	//Create a Chrome driver. All test classes use this.
 //        driver = new ChromeDriver();

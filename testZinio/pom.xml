@@ -16,13 +16,31 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
+		<selenium.version>3.141.59</selenium.version>
+		<phantomjsdriver.version>1.4.3</phantomjsdriver.version>
+		<webdrivermanager.version>3.6.2</webdrivermanager.version>
+		<testng.version>6.13</testng.version>
+		<appium-java-client.version>7.1.0</appium-java-client.version>
+		<!-- spring-boot.version>2.1.6.RELEASE</spring-boot.version -->
+		<slf4j.version>1.7.25</slf4j.version>
+		<logback.version>1.2.3</logback.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>${selenium.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -33,15 +51,25 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
+			<version>${testng.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
-		<dependency>
+	<!-- 	<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>1.3.2</version>
+		</dependency> -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.6.2</version>
+			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>${appium-java-client.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -66,5 +94,8 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- <dependencyManagement> <dependencies> <dependency> <groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-dependencies</artifactId> <version>${spring-boot.version}</version> 
+		<type>pom</type> <scope>import</scope> </dependency> </dependencies> </dependencyManagement> -->
 
 </project>
